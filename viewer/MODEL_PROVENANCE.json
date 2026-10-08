@@ -1,0 +1,17 @@
+{
+  "source_sha256": "60c4be7ea2cf0f0276b1d4534220e5440719e09ce406cd430c0a10e507a7a046",
+  "published_sha256": "cebf9fcdd7c36b71463d6cf7f1409c8e4569164e6b6b4f040ced2dcaed25b5ac",
+  "authors": [
+    "GOROman"
+  ],
+  "changes": [
+    "Enabled standard MToon outline generation for opaque surfaces",
+    "Updated display name/version and copyright wording for owner-authorized viewer publication"
+  ],
+  "license_scope": {
+    "commercialUsage": "personalNonProfit",
+    "allowRedistribution": false,
+    "avatarPermission": "onlySeparatelyLicensedPerson"
+  },
+  "original_geometry_and_embedded_texture_bytes_preserved": true
+}

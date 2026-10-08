@@ -1,13 +1,11 @@
-# Naruebi public GLB viewer
+# Null Evi / ナルエビ VRM viewer
 
-Independent viewer authored for GOROman/nullevi03-model using MIT-licensed three.js and @pixiv/three-vrm MToon materials. No Charakuru or donor source is included.
+Independent static viewer using MIT-licensed three.js, three-vrm and three-vrm-animation. No Charakuru kit code or donor code is included.
 
-The verified v0.1.0 public GLB contains an eight-second greeting animation, no morph targets and no VRM spring definitions. This deployment therefore exposes playback, pause, reset, time scrub, face zoom, PBR/toon comparison and outline width. Expression sliders, spring controls and texture edits are deliberately pending the updated VRM. The page explains these limitations.
+Run `npm ci` then `npm run build` in this directory. The build writes `../docs` with the existing repository Pages base URL. GitHub Actions deploys that directory.
 
-Original model, textures and existing repository files remain unchanged. Toon rendering uses the original maps with anisotropic filtering, stepped MToon lighting and an inverted hull MToon outline pass. It does not claim repaired texture seams or new facial expressions.
+The owner-authorized public viewing copy retains GOROman authorship, personal non-profit commercial scope, restricted avatar use and no redistribution permission. Publication adds no model license. See MODEL_PROVENANCE.json for checksums. Source geometry and embedded texture image bytes remain unchanged; originals are preserved outside this repository.
 
-Model SHA-256: abeba68d1fd8827aaa1a98aa0251c618ef1d8d0cef4ec24b8bf3607d4f40a8ca (verified against the public release SHA256SUMS.txt).
+Controls: playback, pause, reset, time seeking, spring physics, face view, outline width and six real VRM material expression bindings. Eye expressions exclude other eye layers; smile and mouth layers exclude each other to avoid stacked painted facial features. Seeking resets spring history. Texture sampling uses anisotropic trilinear filtering and clamped atlas edges. Transparent facial layers do not write depth or cast shadows and do not receive ink outlines. This does not repaint source textures or turn painted overlays into morph targets.
 
-Build: npm ci, place the public release Naruebi_v01_PBR_approximate.glb at public/models/Naruebi.glb, then npm run build -- --base=/nullevi03-model/. Copy dist into ../docs and add .nojekyll. GitHub Pages serves main:/docs.
-
-No additional model use, modification or redistribution license is granted. Library notices apply only to the viewer dependencies.
+The render uses standard MToon, opaque surface outlines and a soft floor shadow. Libraries and their licenses are listed in public/THIRD_PARTY_NOTICES.txt. Existing filenames remain stable for compatibility; the character's English display name is Null Evi.

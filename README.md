@@ -1,3 +1,7 @@
+## Null Evi / ナルエビ 公開VRMビューアー
+
+[ビューアーを開く](https://goroman.github.io/nullevi03-model/) — トゥーン、輪郭、挨拶VRMA、6表情、揺れ物、顔拡大に対応。独立実装で、Charakuruコードは含みません。個人・非営利の範囲を保持し、公開により追加の再配布・利用許諾は付与しません。
+
 # nullevi03-model / Naruebi・ナルエビ
 
 ナルエビのBlenderモデル、互換GLB、テクスチャ、正面プレビューを公開しています。三面図v01を参考に再構築したモデルです。
