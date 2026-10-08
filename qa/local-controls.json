@@ -1,0 +1,44 @@
+[
+  {
+    "name": "desktop",
+    "passed": true,
+    "state": {
+      "ready": true,
+      "playing": false,
+      "duration": 10.375,
+      "time": 0,
+      "height": 5.677361527466458,
+      "spring": false,
+      "expressions": {
+        "blink": 0,
+        "blinkLeft": 0,
+        "blinkRight": 0,
+        "happy": 0,
+        "aa": 0,
+        "oh": 0
+      }
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "mobile",
+    "passed": true,
+    "state": {
+      "ready": true,
+      "playing": false,
+      "duration": 10.375,
+      "time": 0,
+      "height": 5.677361527466458,
+      "spring": false,
+      "expressions": {
+        "blink": 0,
+        "blinkLeft": 0,
+        "blinkRight": 0,
+        "happy": 0,
+        "aa": 0,
+        "oh": 0
+      }
+    },
+    "consoleErrors": []
+  }
+]

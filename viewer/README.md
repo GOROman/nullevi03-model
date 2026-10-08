@@ -2,7 +2,7 @@
 
 Independent static viewer using MIT-licensed three.js, three-vrm and three-vrm-animation. No Charakuru kit code or donor code is included.
 
-Run `npm ci` then `npm run build` in this directory. The build writes `../docs` with the existing repository Pages base URL. GitHub Actions deploys that directory.
+Copy `../docs/models/` into `public/models/` if starting from a clean clone. Run `npm ci` then `npm run build` in this directory. The build writes `../docs` with the existing repository Pages base URL. GitHub Actions deploys that directory.
 
 The owner-authorized public viewing copy retains GOROman authorship, personal non-profit commercial scope, restricted avatar use and no redistribution permission. Publication adds no model license. See MODEL_PROVENANCE.json for checksums. Source geometry and embedded texture image bytes remain unchanged; originals are preserved outside this repository.
 

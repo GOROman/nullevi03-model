@@ -10,7 +10,7 @@ const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(32,1,.01,2000),
 scene.add(new THREE.HemisphereLight(0xfff8ef,0x857767,1.4));const key=new THREE.DirectionalLight(0xfff1df,2);key.position.set(-3,6,5);key.castShadow=true;key.shadow.mapSize.set(2048,2048);scene.add(key);
 let vrm,mixer,action,playing=false,duration=0,face=false,height=1,focus=new THREE.Vector3(),ready=false;const clock=new THREE.Clock();const expressions=['blink','blinkLeft','blinkRight','happy','aa','oh'];
 function resize(){renderer.setSize(stage.clientWidth,stage.clientHeight);camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(stage);resize();
-function view(){controls.target.copy(focus).add(new THREE.Vector3(0,face?height*.31:0,0));camera.position.copy(controls.target).add(new THREE.Vector3(0,height*.04,face?height*.6:height*2.2));controls.update()}
+function view(){if(face&&vrm){vrm.humanoid.getRawBoneNode('head').getWorldPosition(controls.target);controls.target.y+=height*.025}else controls.target.copy(focus);const narrow=stage.clientWidth<600;camera.position.copy(controls.target).add(new THREE.Vector3(0,height*.04,face?height*.95:height*(narrow?2.8:2.2)));controls.update()}
 function stamp(){$('stamp').value=`${(action?.time??0).toFixed(1)} / ${duration.toFixed(1)} 秒`;$('time').value=action?.time??0}
 function pause(){playing=false;$('play').textContent='再生'}
 function applyExpressions(){if(!vrm)return;for(const name of expressions)vrm.expressionManager.setValue(name,Number($(name).value));vrm.expressionManager.update()}
